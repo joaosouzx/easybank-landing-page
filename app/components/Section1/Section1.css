@@ -1,0 +1,55 @@
+.sec1 {
+  position: relative;
+  background: hsl(0, 0%, 100%);
+  height: 100vh;
+}
+
+.sec1-content {
+  max-width: 90%;
+  width: 70%;
+  margin: auto;
+}
+
+.sec1-content2 {
+  background: url("@/public/image-mockups.png") no-repeat top -120px left;
+  background-size: contain;
+  position: relative;
+  z-index: 1;
+  height: 120vh;
+}
+
+.bg-desktop {
+  background: url("@/public/bg-intro-desktop.svg") no-repeat top left;
+  background-size: 1271px;
+  position: relative;
+  z-index: 0;
+  height: 100vh;
+}
+
+@media screen and (max-width: 1199px) {
+  .sec1 {
+    height: 100%;
+    padding-bottom: 5rem;
+  }
+}
+
+@media screen and (max-width: 1023px), screen and (orientation: portrait) {
+  .sec1-content {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .sec1-content2 {
+    background-position: top -120px center;
+    height: 50vh;
+    max-height: 939px;
+  }
+
+  .bg-desktop {
+    display: block;
+    background: url("@/public/bg-intro-mobile.svg") no-repeat center center;
+    background-size: 100%;
+    height: auto;
+    width: 100%;
+  }
+}

@@ -1,0 +1,29 @@
+.header {
+  background: hsl(220, 16%, 96%);
+  padding: 1rem 0;
+  position: relative;
+  z-index: 2;
+}
+
+.header ul {
+  gap: 2rem;
+}
+
+.header-links {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  color: hsl(233, 8%, 62%);
+  transition: all .3s;
+}
+
+.header-links:hover {
+  color: hsl(233, 26%, 24%);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    display: none;
+  }
+}

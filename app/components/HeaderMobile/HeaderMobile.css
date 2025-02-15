@@ -1,0 +1,11 @@
+.header-mobile button:active,
+.header-mobile button:focus {
+  border: none;
+  outline: none;
+}
+
+@media screen and (min-width: 768px) {
+  .header-mobile {
+    display: none;
+  }
+}

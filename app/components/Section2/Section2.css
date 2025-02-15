@@ -1,0 +1,23 @@
+.sec2 {
+  z-index: 1;
+  background: hsl(220, 16%, 96%);
+  height: 100vh;
+  gap: 5rem;
+}
+
+.sec2-items {
+  gap: 2rem;
+}
+
+@media screen and (max-width: 1023px), screen and (orientation: portrait) {
+  .sec2 {
+    height: 100%;
+    padding: 5rem 0;
+    text-align: center;
+  }
+
+  .sec2-items img {
+    margin: auto;
+  }
+  
+}

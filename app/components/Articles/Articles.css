@@ -1,0 +1,41 @@
+.articles {
+  gap: 2rem;
+  height: 100vh;
+  background: hsl(0, 0%, 100%);
+}
+
+.article h3:hover {
+  color: hsl(136, 65%, 51%);
+  cursor: pointer;
+}
+
+.article img {
+  width: 100%;
+  max-width: 600px;
+  height: 30%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.article div {
+  width: 90%;
+  margin: 1rem auto;
+}
+
+@media screen and (max-width: 1023px),
+screen and (orientation: portrait) {
+  .articles {
+    height: 100%;
+    padding: 5rem 0;
+    text-align: center;
+  }
+
+  .article img {
+    margin: auto;
+  }
+
+  .article div {
+    text-align: left;
+  }
+}
