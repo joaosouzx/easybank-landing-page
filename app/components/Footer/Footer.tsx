@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import InviteButton from '../InviteButton/InviteButton';
 import './Footer.css';
 
@@ -6,13 +7,13 @@ export default function Footer() {
     <footer>
       <div className="container flex flex-col lg:flex-row justify-center items-center">
         <div className='flex-auto'>
-          <img className='footer-logo' src='/logo.svg' alt='Logo' />
+          <Image className='footer-logo' src='/logo.svg' width={139} height={20} alt='Logo' />
           <div className='footer-socials'>
-            <img src="/icon-facebook.svg" alt="facebook" />
-            <img src="/icon-youtube.svg" alt="youtube" />
-            <img src="/icon-twitter.svg" alt="twitter" />
-            <img src="/icon-pinterest.svg" alt="pinterest" />
-            <img src="/icon-instagram.svg" alt="instagram" />
+            <Image src="/icon-facebook.svg" width={20} height={20} alt="facebook" />
+            <Image src="/icon-youtube.svg" width={20} height={20} alt="youtube" />
+            <Image src="/icon-twitter.svg" width={20} height={20} alt="twitter" />
+            <Image src="/icon-pinterest.svg" width={20} height={20} alt="pinterest" />
+            <Image src="/icon-instagram.svg" width={20} height={20} alt="instagram" />
           </div>
         </div>
         <div className="flex-1">

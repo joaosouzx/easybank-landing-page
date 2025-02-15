@@ -1,4 +1,3 @@
-import Image from "next/image";
 import InviteButton from "../InviteButton/InviteButton";
 import './Section1.css';
 
